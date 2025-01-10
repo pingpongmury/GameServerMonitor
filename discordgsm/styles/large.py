@@ -47,10 +47,7 @@ class Large(Medium):
         player_count = 0
 
         for i, player in enumerate(filtered_players):
-            name = player['name'][:23]
-
-            if len(player['name']) > 23:
-                name = name[:-3] + '...'
+            name = player['name']
 
             # Replace Markdown
             # https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-
